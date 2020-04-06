@@ -53,8 +53,7 @@
 				<h1>
 					<a href="index.html"> ABC Group </a>
 				</h1>
-				<!-- Uncomment below if you prefer to use an image logo -->
-				<!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
 			</div>
 
 			<nav class="nav-menu d-none d-lg-block">
@@ -78,7 +77,7 @@
 		class="d-flex flex-column justify-content-center align-items-center">
 		<div class="container text-center text-md-left" data-aos="fade-up">
 			<h1>
-				Welcome to <span> ABC Group </span>
+				Welcome to <span > ABC Group </span>
 			</h1>
 			<h2>We are the top talented design team in Vietnam</h2>
 			<a href="log/dangnhap.htm" class="btn-get-started scrollto">Sign
