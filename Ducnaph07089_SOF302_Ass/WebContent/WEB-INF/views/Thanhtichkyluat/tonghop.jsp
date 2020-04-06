@@ -122,6 +122,7 @@ th{
 					<th width="auto">Tên Nhân Viên</th>
 					<th width="auto">Tổng thành tích</th>
 					<th width="auto">Tổng kỷ luật</th>
+					<th width="auto">Điểm Thưởng</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -131,6 +132,7 @@ th{
 						<td>${a[1]}</td>
 						<td>${a[2]}</td>
 						<td>${a[3]}</td>
+						<td>${{a[2]}-{a[3]} }</td>
 					</tr>
 				</c:forEach>
 			</tbody>
