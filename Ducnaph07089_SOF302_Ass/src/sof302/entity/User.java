@@ -10,7 +10,7 @@ import org.hibernate.validator.constraints.NotBlank;
 @Table(name = "Users")
 public class User {
 	
-	@NotBlank(message = "Bạn chưa nhập tài khoản !")
+	@NotBlank(message = "Bạn chưa nhập tài Khoản !")
 	@Id
 	private String username;
 	

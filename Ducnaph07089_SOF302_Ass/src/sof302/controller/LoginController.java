@@ -47,7 +47,7 @@ public class LoginController {
 				return "log/dangnhap";		
 			}
 			if (!user.getPassword().equals(password)) {
-				model.addAttribute("message", "Sai tên đăng nhập hoặc mật khẩu !");
+				model.addAttribute("message", "Sai Tên Tài Khoản !");
 				return "log/dangnhap";
 			} else {
 				httpSession.setAttribute("user", user);
@@ -56,7 +56,7 @@ public class LoginController {
 				return ql.index(model);
 			}
 		} catch (Exception e) {
-			model.addAttribute("message", "Sai tên đăng nhập hoặc mật khẩu !");
+			model.addAttribute("message", "Sai Mật Khẩu !");
 			return "log/dangnhap";
 		}		
 	}
@@ -78,22 +78,22 @@ public class LoginController {
 //			@RequestParam("mkmoi") String newpass1, 
 //			@RequestParam("mkmoi1") String newpass2) {
 //		if(!newpass1.equals(newpass2)){
-//			model.addAttribute("message", "Xác nhận mật khẩu mới không đúng !");
+//			model.addAttribute("message", "XÃ¡c nháº­n máº­t kháº©u má»›i khÃ´ng Ä‘Ãºng !");
 //		}
 //		else{
 //			Session session = factory.getCurrentSession();
 //			try {
 //				User user = (User) session.get(User.class, password);
 //				if(!user.getPassword().equals(password)){
-//					model.addAttribute("message", "Sai mật khẩu !");
+//					model.addAttribute("message", "Sai máº­t kháº©u !");
 //				}
 //				else{
-//					model.addAttribute("message", "Mật khẩu đã được đỏi !");
+//					model.addAttribute("message", "Máº­t kháº©u Ä‘Ã£ Ä‘Æ°á»£c Ä‘á»�i !");
 //					user.setPassword(newpass2);
 //				}
 //			} 
 //			catch (Exception e) {
-//				model.addAttribute("message", "Sai mật khẩu !");
+//				model.addAttribute("message", "Sai máº­t kháº©u !");
 //			}
 //		}
 //		return "log/doimatkhau";

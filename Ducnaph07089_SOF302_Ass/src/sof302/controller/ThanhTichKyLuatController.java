@@ -48,10 +48,10 @@ public class ThanhTichKyLuatController {
 		try {
 			session.save(record);
 			t.commit();
-			model.addAttribute("message", "Thêm mới thành công !");
+			model.addAttribute("message", "Thêm Mới Thành Công !");
 		} catch (Exception e) {
 			t.rollback();
-			model.addAttribute("message", "Thêm mới thất bại !");
+			model.addAttribute("message", "Thêm Mới Thất Bại !");
 		} finally {
 			session.close();
 		}
@@ -66,10 +66,10 @@ public class ThanhTichKyLuatController {
 		try {
 			session.update(record);
 			t.commit();
-			model.addAttribute("message", "Cập nhật thành công !");
+			model.addAttribute("message", "Cập Nhật Thành Công!");
 		} catch (Exception e) {
 			t.rollback();
-			model.addAttribute("message", "Cập nhật thất bại !");
+			model.addAttribute("message", "Cập Nhật Thất Bại !");
 		} finally {
 			session.close();
 		}
@@ -84,10 +84,10 @@ public class ThanhTichKyLuatController {
 		try {
 			session.delete(record);
 			t.commit();
-			model.addAttribute("message", "Xóa thành công !");
+			model.addAttribute("message", "Xóa Thành Công !");
 		} catch (Exception e) {
 			t.rollback();
-			model.addAttribute("message", "Xóa thất bại !");
+			model.addAttribute("message", "Xóa Thất Bại !");
 		} finally {
 			session.close();
 		}
