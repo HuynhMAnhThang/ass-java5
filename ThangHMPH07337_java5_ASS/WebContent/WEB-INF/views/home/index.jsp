@@ -83,7 +83,7 @@
 				Welcome to <span> ABC Group </span>
 			</h1>
 			<h2>We are the top talented design team in Vietnam</h2>
-			<a href="log/dangnhap.htm" class="btn-get-started scrollto">Sign
+			<a href="../log/dangnhap.htm" class="btn-get-started scrollto">Sign
 				In<i class="fa fa-sign-in"></i>
 			</a>
 		</div>
@@ -159,20 +159,20 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 						do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					<ul>
-						<li><i class="bx bx-check-double"></i> Ullamco laboris nisi
+						<li><i class="	fa fa-check-square-o"></i> Ullamco laboris nisi
 							ut aliquip ex ea commodo consequat.</li>
-						<li><i class="bx bx-check-double"></i> Duis aute irure dolor
+						<li><i class="	fa fa-check-square-o"></i> Duis aute irure dolor
 							in reprehenderit in voluptate velit.</li>
 					</ul>
 					<div class="row icon-boxes">
 						<div class="col-md-6">
-							<i class="material-icons" style="font-size: 48px; color: red"></i>
+							<i class="fa fa-wpforms" ></i>
 							<h4>Corporis voluptates sit</h4>
 							<p>Consequuntur sunt aut quasi enim aliquam quae harum
 								pariatur laboris nisi ut aliquip</p>
 						</div>
 						<div class="col-md-6 mt-4 mt-md-0">
-							<i class="bx bx-cube-alt"></i>
+							<i class="fa fa-codepen"></i>
 							<h4>Ullamco laboris nisi</h4>
 							<p>Excepteur sint occaecat cupidatat non proident, sunt in
 								culpa qui officia deserunt</p>
@@ -257,21 +257,21 @@
 
 				<div class="col-lg-3 col-6">
 					<div class="count-box">
-						<i class="far fa-smile-beam"></i> <span data-toggle="counter-up">232</span>
+						<i class="	fa fa-smile-o"></i> <span data-toggle="counter-up">232</span>
 						<p>Happy Clients</p>
 					</div>
 				</div>
 
 				<div class="col-lg-3 col-6">
 					<div class="count-box">
-						<i class="far fa-file"></i> <span data-toggle="counter-up">521</span>
+						<i class="fa fa-file-archive-o"></i> <span data-toggle="counter-up">521</span>
 						<p>Projects</p>
 					</div>
 				</div>
 
 				<div class="col-lg-3 col-6 mt-5 mt-lg-0">
 					<div class="count-box">
-						<i class="icofont-live-support"></i> <span
+						<i class="fa fa-support"></i> <span
 							data-toggle="counter-up">1,463</span>
 						<p>Hours Of Support</p>
 					</div>
@@ -279,7 +279,7 @@
 
 				<div class="col-lg-3 col-6 mt-5 mt-lg-0">
 					<div class="count-box">
-						<i class="icofont-users-alt-5"></i> <span data-toggle="counter-up">15</span>
+						<i class="fa fa-users"></i> <span data-toggle="counter-up">15</span>
 						<p>Hard Workers</p>
 					</div>
 				</div>

@@ -29,7 +29,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css"> 
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
 		<!-- Style -->
 <style type="text/css">
 body{
@@ -194,7 +195,7 @@ font-size: 13px;
 						<td>${a.type?'Thành tích':'Kỷ luật'}</td>
 						<td>${a.reason}</td>
 						<td  style="text-align: center;">${a.date}</td>
-						<td><a href="Thanhtichkyluat/thanhtich-kyluat/${a.id}.htm">Sửa</a></td>
+						<td><a href="Thanhtichkyluat/thanhtich-kyluat/${a.id}.htm"><i class="fa fa-edit"></i></a></td>
 					</tr>
 				</c:forEach>
 			</tbody>
@@ -277,7 +278,7 @@ font-size: 13px;
 			table = document.getElementById("myTable");
 			tr = table.getElementsByTagName("tr");
 			for (i = 0; i < tr.length; i++) {
-				td = tr[i].getElementsByTagName("td")[1];
+				td = tr[i].getElementsByTagName("td")[0];
 				if (td) {
 					txtValue = td.textContent || td.innerText;
 					if (txtValue.toUpperCase().indexOf(filter) > -1) {

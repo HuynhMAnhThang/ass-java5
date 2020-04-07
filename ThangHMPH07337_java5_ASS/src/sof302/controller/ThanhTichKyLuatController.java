@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-
+import jdk.nashorn.internal.runtime.regexp.joni.exception.JOniException;
 import sof302.entity.Record;
 import sof302.entity.Staff;
 
@@ -63,7 +63,7 @@ public class ThanhTichKyLuatController {
 	}
 
 	@RequestMapping(value = "thanhtich-kyluat", params = "btnUpdate")
-	public String update(ModelMap model,@Validated @ModelAttribute("record") Record record, BindingResult errors) {
+	public String update(ModelMap model, @Validated @ModelAttribute("record") Record record, BindingResult errors) {
 		Session session = factory.openSession();
 		Transaction t = session.beginTransaction();
 		try {
@@ -71,7 +71,7 @@ public class ThanhTichKyLuatController {
 			t.commit();
 			model.addAttribute("message", "Cập Nhật Thành Công !");
 		} catch (Exception e) {
-			System.out.println(e);
+			
 			t.rollback();
 			model.addAttribute("message", "Cập Nhật Thất Bại !");
 		} finally {
@@ -142,7 +142,7 @@ public class ThanhTichKyLuatController {
 		String hql2 = "SELECT  r.staff.depart.name," + "SUM(case when r.type = 1 then 1 else 0 end), " + 
 											 "SUM(case when r.type = 0 then 1 else 0 end) " +
 											 "FROM Record r" + " GROUP BY r.staff.depart.name "+
-											 "order by (SUM(case when r.type = 0 then 1 else 0 end)-SUM(case when r.type = 1 then 1 else 0 end)) desc";
+											 "order by (SUM(case when r.type = 0 then 1 else 0 end)-SUM(case when r.type = 1 then 1 else 0 end)) asc";
 		Query query = session.createQuery(hql2);
 		List<Object[]> list2 = query.list();
 		model.addAttribute("arraysPB", list2);

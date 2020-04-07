@@ -25,7 +25,7 @@ public class HomeController {
 		Session session = factory.getCurrentSession();
 		String hql = "SELECT r.staff.name,r.staff.depart.name," + "SUM(case when r.type = 1 then 1 else 0 end), " + 
 				 "SUM(case when r.type = 0 then 1 else 0 end) " +
-				 "FROM Record r" + " GROUP BY  r.staff.name,r.staff.depart.name   "+
+				 "FROM Record r " + " GROUP BY  r.staff.name,r.staff.depart.name    "+
 				 "order by (SUM(case when r.type = 1 then 1 else 0 end)- SUM(case when r.type = 0 then 1 else 0 end)) desc";
 		Query query = session.createQuery(hql);
 		List<Object[]> list = query.list();

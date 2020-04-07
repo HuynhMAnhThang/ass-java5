@@ -28,7 +28,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
 		<!-- Style -->
 <style type="text/css">
 body{
@@ -188,7 +189,7 @@ font-size: 13px;
 					<tr class="warning">
 						<td>${a.id}</td>
 						<td>${a.name}</td>
-						<td><a href="QuanLy/qlqb/${a.id}.htm">Sửa</a></td>
+						<td><a href="QuanLy/qlqb/${a.id}.htm"><i class="fa fa-edit"></i></a></td>
 					</tr>
 				</c:forEach>
 			</tbody>
