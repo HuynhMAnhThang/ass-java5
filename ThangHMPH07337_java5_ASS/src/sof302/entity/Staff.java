@@ -30,18 +30,20 @@ public class Staff {
 	@NotBlank(message = "Vui lòng nhập tên nhân viên !")
 	private String name;
 	private boolean gender;
+	
 	@Temporal(TemporalType.DATE)
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	private Date birthday;
 	
-	@Email(message = "Chưa đúng định dạng email (ex@abc.xyz)")
+	@NotBlank(message = "vui lòng nhập email (ex:abc123@gmail)")
 	private String email;
 	
 	@NotBlank(message = "Vui lòng nhập số điện thoại !")
-	@Length(min = 10, max = 10, message = "Số điện thoại phải đủ 10 ký tự !")
+	@Length(min = 10, max = 10, message = "Vui lòng nhập đủ số điện thoại !")
 	private String phone;
 	
-	@NotNull(message = "Vui lòng nhập lương !")
+	@NotNull(message = "Vui Lòng nhập lương !")
+
 	private Float salary;
 	private Integer lever;
 	private	String notes;

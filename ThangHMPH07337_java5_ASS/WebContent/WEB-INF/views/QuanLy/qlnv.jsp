@@ -138,7 +138,7 @@ font-size: 13px;
 					
 					<tr>
 						<td><form:input path="id" cssClass="in" placeholder="Điền tự động.."/></td>
-						<td><form:input path="phone" cssClass="in" placeholder="Nhập số điện thoại.."/></td>
+						<td><form:errors  path="phone"></form:errors><form:input path="phone" cssClass="in" placeholder="Nhập số điện thoại.."/></td>
 					</tr>
 					
 					<tr>
@@ -147,8 +147,8 @@ font-size: 13px;
 					</tr>
 					
 					<tr>
-						<td><form:input path="name" cssClass="in" placeholder="Nhập tên nhân viên.."/></td>
-						<td><form:input path="salary" cssClass="in" placeholder="Nhập số lương .."/></td>
+						<td><form:errors  path="name"></form:errors><form:input path="name" cssClass="in" placeholder="Nhập tên nhân viên.."/></td>
+						<td><form:errors  path="salary"></form:errors><form:input path="salary" cssClass="in" placeholder="Nhập số lương .."/></td>
 					</tr>
 					
 					<tr>
@@ -180,7 +180,7 @@ font-size: 13px;
 					</tr>
 					
 					<tr>
-						<td><form:input path="birthday" cssClass="in" placeholder="Ngày/Tháng/Năm.."/></td>
+						<td><form:errors  path="birthday"></form:errors><form:input path="birthday" cssClass="in" placeholder="Ngày/Tháng/Năm.."/></td>
 						<td><form:input path="notes" cssClass="in" placeholder="Nhập ghi chú.."/></td>
 					</tr>
 					
@@ -190,7 +190,7 @@ font-size: 13px;
 					</tr>
 					
 					<tr>
-						<td><form:input path="email" cssClass="in" placeholder="Nhập email (@gmail.com).."/></td>
+						<td><form:errors  path="email"></form:errors><form:input path="" cssClass="in" placeholder="Nhập email (@gmail.com).."/></td>
 						<td><form:select path="depart.id" cssClass="in" items="${departs}" itemValue="id" itemLabel="name" /></td>
 					</tr>
 					
@@ -283,6 +283,8 @@ font-size: 13px;
 			var name = document.getElementById("name").value;
 			var sdt = document.getElementById("phone").value;
 			var luong = document.getElementById("salary").value;
+			var ngay = document.getElementById("birthday").value;
+			var email = document.getElementById("email").value;
 			if (id == "") {
 				alert("Vui lòng nhập mã nhân viên !");
 				return false;
@@ -303,6 +305,12 @@ font-size: 13px;
 				return false;
 			} if (luong.length == 0) {
 				alert("Vui lòng nhập lương !")
+			}
+			if (ngay.length == 0) {
+				alert("Vui lòng nhập Ngày/Tháng/Năm !")
+			}
+			if (email.length == 0) {
+				alert("Vui lòng nhập Email !")
 			}
 			else{
 				alert("Cập nhật thành công !")
