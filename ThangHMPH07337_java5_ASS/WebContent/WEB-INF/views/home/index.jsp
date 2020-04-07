@@ -5,7 +5,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
 <title>Trang chủ</title>
 <meta content="" name="descriptison">
@@ -17,18 +18,28 @@
 	rel="stylesheet">
 
 <!-- Vendor CSS Files -->
-<link href="<%=request.getContextPath()%>/assets/vendor/bootstrap/css/bootstrap.min.css"
+<link
+	href="<%=request.getContextPath()%>/assets/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
-<link href="<%=request.getContextPath()%>/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-<link href="<%=request.getContextPath()%>/assets/vendor/boxicons/css/boxicons.min.css"
+<link
+	href="<%=request.getContextPath()%>/assets/vendor/icofont/icofont.min.css"
 	rel="stylesheet">
-<link href="<%=request.getContextPath()%>/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-<link href="<%=request.getContextPath()%>/assets/vendor/venobox/venobox.css" rel="stylesheet">
-<link href="<%=request.getContextPath()%>/assets/vendor/owl.carousel/<%=request.getContextPath()%>/assets/owl.carousel.min.css"
+<link
+	href="<%=request.getContextPath()%>/assets/vendor/boxicons/css/boxicons.min.css"
+	rel="stylesheet">
+<link
+	href="<%=request.getContextPath()%>/assets/vendor/animate.css/animate.min.css"
+	rel="stylesheet">
+<link
+	href="<%=request.getContextPath()%>/assets/vendor/venobox/venobox.css"
+	rel="stylesheet">
+<link
+	href="<%=request.getContextPath()%>/assets/vendor/owl.carousel/<%=request.getContextPath()%>/assets/owl.carousel.min.css"
 	rel="stylesheet">
 
 <!-- Template Main CSS File -->
-<link href="<%=request.getContextPath()%>/assets/css/style.css" rel="stylesheet">
+<link href="<%=request.getContextPath()%>/assets/css/style.css"
+	rel="stylesheet">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -140,7 +151,8 @@
 
 			<div class="row">
 				<div class="col-lg-6">
-					<img src="<%=request.getContextPath()%>/assets/img/about.jpg" class="img-fluid" alt="">
+					<img src="<%=request.getContextPath()%>/assets/img/about.jpg"
+						class="img-fluid" alt="">
 				</div>
 				<div class="col-lg-6 pt-4 pt-lg-0">
 					<h3>About Us</h3>
@@ -245,16 +257,14 @@
 
 				<div class="col-lg-3 col-6">
 					<div class="count-box">
-						<i class="far fa-smile-beam"></i> <span
-							data-toggle="counter-up">232</span>
+						<i class="far fa-smile-beam"></i> <span data-toggle="counter-up">232</span>
 						<p>Happy Clients</p>
 					</div>
 				</div>
 
 				<div class="col-lg-3 col-6">
 					<div class="count-box">
-						<i class="far fa-file"></i> <span
-							data-toggle="counter-up">521</span>
+						<i class="far fa-file"></i> <span data-toggle="counter-up">521</span>
 						<p>Projects</p>
 					</div>
 				</div>
@@ -305,9 +315,11 @@
 					class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
 					<div class="portfolio-wrap">
 						<figure>
-							<img src="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-1.jpg" class="img-fluid"
-								alt="">
-							<a href="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-1.jpg"
+							<img
+								src="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-1.jpg"
+								class="img-fluid" alt="">
+							<a
+								href="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-1.jpg"
 								data-gall="portfolioGallery" class="link-preview venobox"
 								title="Preview"><i class="	fa fa-eye"
 								style="font-size: 24px"></i></a>
@@ -330,9 +342,11 @@
 					data-wow-delay="0.1s">
 					<div class="portfolio-wrap">
 						<figure>
-							<img src="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-2.jpg" class="img-fluid"
-								alt="">
-							<a href="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-2.jpg"
+							<img
+								src="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-2.jpg"
+								class="img-fluid" alt="">
+							<a
+								href="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-2.jpg"
 								class="link-preview venobox" data-gall="portfolioGallery"
 								title="Preview"><i class="	fa fa-eye"
 								style="font-size: 24px"></i></a>
@@ -355,9 +369,11 @@
 					data-wow-delay="0.2s">
 					<div class="portfolio-wrap">
 						<figure>
-							<img src="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-3.jpg" class="img-fluid"
-								alt="">
-							<a href="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-3.jpg"
+							<img
+								src="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-3.jpg"
+								class="img-fluid" alt="">
+							<a
+								href="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-3.jpg"
 								class="link-preview venobox" data-gall="portfolioGallery"
 								title="Preview"><i class="	fa fa-eye"
 								style="font-size: 24px"></i></a>
@@ -379,9 +395,11 @@
 					class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
 					<div class="portfolio-wrap">
 						<figure>
-							<img src="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-4.jpg" class="img-fluid"
-								alt="">
-							<a href="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-4.jpg"
+							<img
+								src="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-4.jpg"
+								class="img-fluid" alt="">
+							<a
+								href="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-4.jpg"
 								class="link-preview venobox" data-gall="portfolioGallery"
 								title="Preview"><i class="	fa fa-eye"
 								style="font-size: 24px"></i></a>
@@ -404,9 +422,11 @@
 					data-wow-delay="0.1s">
 					<div class="portfolio-wrap">
 						<figure>
-							<img src="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-5.jpg" class="img-fluid"
-								alt="">
-							<a href="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-5.jpg"
+							<img
+								src="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-5.jpg"
+								class="img-fluid" alt="">
+							<a
+								href="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-5.jpg"
 								class="link-preview venobox" data-gall="portfolioGallery"
 								title="Preview"><i class="	fa fa-eye"
 								style="font-size: 24px"></i></a>
@@ -429,9 +449,11 @@
 					data-wow-delay="0.2s">
 					<div class="portfolio-wrap">
 						<figure>
-							<img src="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-6.jpg" class="img-fluid"
-								alt="">
-							<a href="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-6.jpg"
+							<img
+								src="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-6.jpg"
+								class="img-fluid" alt="">
+							<a
+								href="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-6.jpg"
 								class="link-preview venobox" data-gall="portfolioGallery"
 								title="Preview"><i class="	fa fa-eye"
 								style="font-size: 24px"></i></a>
@@ -453,9 +475,11 @@
 					class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
 					<div class="portfolio-wrap">
 						<figure>
-							<img src="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-7.jpg" class="img-fluid"
-								alt="">
-							<a href="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-7.jpg"
+							<img
+								src="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-7.jpg"
+								class="img-fluid" alt="">
+							<a
+								href="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-7.jpg"
 								class="link-preview venobox" data-gall="portfolioGallery"
 								title="Preview"><i class="	fa fa-eye"
 								style="font-size: 24px"></i></a>
@@ -478,9 +502,11 @@
 					data-wow-delay="0.1s">
 					<div class="portfolio-wrap">
 						<figure>
-							<img src="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-8.jpg" class="img-fluid"
-								alt="">
-							<a href="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-8.jpg"
+							<img
+								src="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-8.jpg"
+								class="img-fluid" alt="">
+							<a
+								href="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-8.jpg"
 								class="link-preview venobox" data-gall="portfolioGallery"
 								title="Preview"><i class="	fa fa-eye"
 								style="font-size: 24px"></i></a>
@@ -503,9 +529,11 @@
 					data-wow-delay="0.2s">
 					<div class="portfolio-wrap">
 						<figure>
-							<img src="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-9.jpg" class="img-fluid"
-								alt="">
-							<a href="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-9.jpg"
+							<img
+								src="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-9.jpg"
+								class="img-fluid" alt="">
+							<a
+								href="<%=request.getContextPath()%>/assets/img/portfolio/portfolio-9.jpg"
 								class="link-preview venobox" data-gall="portfolioGallery"
 								title="Preview"><i class="	fa fa-eye"
 								style="font-size: 24px"></i></a>
@@ -527,13 +555,9 @@
 
 		</div>
 	</section>
-	<!-- End Portfolio Section -->
-	
-	
-	
- <!-- ======= Testimonials Section ======= -->
- 
-		<!-- End Testimonials Section --> <!-- ======= Team Section ======= -->
+	<!-- End Portfolio Section --> <!-- ======= Testimonials Section ======= -->
+
+	<!-- End Testimonials Section --> <!-- ======= Team Section ======= -->
 	<section id="Top10" class="team">
 		<div class="container">
 
@@ -544,93 +568,23 @@
 
 			<div class="row">
 				<c:forEach var="a" items="${arrays}">
-				<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-					<div class="member">
-						<img src="<%=request.getContextPath()%>/assets/img/team/team-1.jpg" alt="">
-						<h4>${a[0]}</h4>
-						<span>${a[1]}</span>
-<%-- 						<p>${a[3]}</p> --%>
-						<div class="social">
-							<button class="btn btn-success">
-								<a href="#" style="color: white">See Detail</a>
-							</button>
+					<div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+						<div class="member">
+							<img
+								src="<%=request.getContextPath()%>/assets/img/team/team-1.jpg"
+								alt="">
+							<h4>${a[0]}</h4>
+							<span>${a[1]}</span>
+							<%-- <p>${a[4]}</p> --%>
+							<div class="social">
+								<button class="btn btn-success">
+									<a href="#" style="color: white">See Detail</a>
+								</button>
+							</div>
 						</div>
 					</div>
-				</div>
 				</c:forEach>
 
-<!-- 				<div class="col-lg-4 col-md-6 d-flex align-items-stretch"> -->
-<!-- 					<div class="member"> -->
-<!-- 						<img src="<%=request.getContextPath()%>/assets/img/team/team-2.jpg" alt=""> -->
-<!-- 						<h4>Sarah Jhinson</h4> -->
-<!-- 						<span>Product Manager</span> -->
-<!-- 						<p>Repellat fugiat adipisci nemo illum nesciunt voluptas -->
-<!-- 							repellendus. In architecto rerum rerum temporibus</p> -->
-<!-- 						<div class="social"> -->
-<!-- 							<button class="btn btn-success"> -->
-<!-- 								<a href="#" style="color: white">See Detail</a> -->
-<!-- 							</button> -->
-<!-- 						</div> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
-
-<!-- 				<div class="col-lg-4 col-md-6 d-flex align-items-stretch"> -->
-<!-- 					<div class="member"> -->
-<!-- 						<img src="<%=request.getContextPath()%>/assets/img/team/team-3.jpg" alt=""> -->
-<!-- 						<h4>William Anderson</h4> -->
-<!-- 						<span>CTO</span> -->
-<!-- 						<p>Voluptas necessitatibus occaecati quia. Earum totam -->
-<!-- 							consequuntur qui porro et laborum toro des clara</p> -->
-<!-- 						<div class="social"> -->
-<!-- 							<button class="btn btn-success"> -->
-<!-- 								<a href="#" style="color: white">See Detail</a> -->
-<!-- 							</button> -->
-<!-- 						</div> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
-
-<!-- 				<div class="col-lg-4 col-md-6 d-flex align-items-stretch"> -->
-<!-- 					<div class="member"> -->
-<!-- 						<img src="<%=request.getContextPath()%>/assets/img/team/team-3.jpg" alt=""> -->
-<!-- 						<h4>William Anderson</h4> -->
-<!-- 						<span>CTO</span> -->
-<!-- 						<p>Voluptas necessitatibus occaecati quia. Earum totam -->
-<!-- 							consequuntur qui porro et laborum toro des clara</p> -->
-<!-- 						<div class="social"> -->
-<!-- 							<button class="btn btn-success"> -->
-<!-- 								<a href="#" style="color: white">See Detail</a> -->
-<!-- 							</button> -->
-<!-- 						</div> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
-<!-- 				<div class="col-lg-4 col-md-6 d-flex align-items-stretch"> -->
-<!-- 					<div class="member"> -->
-<!-- 						<img src="<%=request.getContextPath()%>/assets/img/team/team-3.jpg" alt=""> -->
-<!-- 						<h4>William Anderson</h4> -->
-<!-- 						<span>CTO</span> -->
-<!-- 						<p>Voluptas necessitatibus occaecati quia. Earum totam -->
-<!-- 							consequuntur qui porro et laborum toro des clara</p> -->
-<!-- 						<div class="social"> -->
-<!-- 							<button class="btn btn-success"> -->
-<!-- 								<a href="#" style="color: white">See Detail</a> -->
-<!-- 							</button> -->
-<!-- 						</div> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
-<!-- 				<div class="col-lg-4 col-md-6 d-flex align-items-stretch"> -->
-<!-- 					<div class="member"> -->
-<!-- 						<img src="<%=request.getContextPath()%>/assets/img/team/team-3.jpg" alt=""> -->
-<!-- 						<h4>William Anderson</h4> -->
-<!-- 						<span>CTO</span> -->
-<!-- 						<p>Voluptas necessitatibus occaecati quia. Earum totam -->
-<!-- 							consequuntur qui porro et laborum toro des clara</p> -->
-<!-- 						<div class="social"> -->
-<!-- 							<button class="btn btn-success"> -->
-<!-- 								<a href="#" style="color: white">See Detail</a> -->
-<!-- 							</button> -->
-<!-- 						</div> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
 
 			</div>
 
@@ -818,15 +772,24 @@
 		style="font-size: 36px; color: white"></i></a>
 
 	<!-- Vendor JS Files -->
-	<script src="<%=request.getContextPath()%>/assets/vendor/jquery/jquery.min.js"></script>
-	<script src="<%=request.getContextPath()%>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="<%=request.getContextPath()%>/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-	<script src="<%=request.getContextPath()%>/assets/vendor/php-email-form/validate.js"></script>
-	<script src="<%=request.getContextPath()%>/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-	<script src="<%=request.getContextPath()%>/assets/vendor/counterup/counterup.min.js"></script>
-	<script src="<%=request.getContextPath()%>/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-	<script src="<%=request.getContextPath()%>/assets/vendor/venobox/venobox.min.js"></script>
-	<script src="<%=request.getContextPath()%>/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+	<script
+		src="<%=request.getContextPath()%>/assets/vendor/jquery/jquery.min.js"></script>
+	<script
+		src="<%=request.getContextPath()%>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script
+		src="<%=request.getContextPath()%>/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+	<script
+		src="<%=request.getContextPath()%>/assets/vendor/php-email-form/validate.js"></script>
+	<script
+		src="<%=request.getContextPath()%>/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+	<script
+		src="<%=request.getContextPath()%>/assets/vendor/counterup/counterup.min.js"></script>
+	<script
+		src="<%=request.getContextPath()%>/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+	<script
+		src="<%=request.getContextPath()%>/assets/vendor/venobox/venobox.min.js"></script>
+	<script
+		src="<%=request.getContextPath()%>/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
 
 	<!-- Template Main JS File -->
 	<script src="<%=request.getContextPath()%>/assets/js/main.js"></script>
