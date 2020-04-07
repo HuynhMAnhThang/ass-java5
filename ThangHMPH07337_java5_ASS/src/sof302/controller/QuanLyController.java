@@ -2,7 +2,7 @@ package sof302.controller;
 
 import java.util.List;
 
-import javax.servlet.http.HttpSession;
+
 
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import sof302.entity.Depart;
 import sof302.entity.Staff;
-import sof302.entity.User;
+
 
 @Transactional
 @Controller

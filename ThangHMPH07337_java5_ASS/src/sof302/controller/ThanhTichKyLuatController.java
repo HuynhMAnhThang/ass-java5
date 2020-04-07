@@ -10,11 +10,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import sof302.entity.Depart;
+
 import sof302.entity.Record;
 import sof302.entity.Staff;
 
@@ -42,7 +44,7 @@ public class ThanhTichKyLuatController {
 	}
 
 	@RequestMapping(value = "thanhtich-kyluat", params = "btnInsert")
-	public String insert(ModelMap model, @ModelAttribute("record") Record record) {
+	public String insert(ModelMap model,@Validated @ModelAttribute("record") Record record,BindingResult errors) {
 		Session session = factory.openSession();
 		Transaction t = session.beginTransaction();
 		try {
@@ -50,6 +52,7 @@ public class ThanhTichKyLuatController {
 			t.commit();
 			model.addAttribute("message", "Thêm Mới Thành Công !");
 		} catch (Exception e) {
+		
 			t.rollback();
 			model.addAttribute("message", "Thêm Mới Thất Bại !");
 		} finally {
@@ -60,7 +63,7 @@ public class ThanhTichKyLuatController {
 	}
 
 	@RequestMapping(value = "thanhtich-kyluat", params = "btnUpdate")
-	public String update(ModelMap model, @ModelAttribute("record") Record record) {
+	public String update(ModelMap model,@Validated @ModelAttribute("record") Record record, BindingResult errors) {
 		Session session = factory.openSession();
 		Transaction t = session.beginTransaction();
 		try {
@@ -68,6 +71,7 @@ public class ThanhTichKyLuatController {
 			t.commit();
 			model.addAttribute("message", "Cập Nhật Thành Công !");
 		} catch (Exception e) {
+			System.out.println(e);
 			t.rollback();
 			model.addAttribute("message", "Cập Nhật Thất Bại !");
 		} finally {
@@ -86,6 +90,7 @@ public class ThanhTichKyLuatController {
 			t.commit();
 			model.addAttribute("message", "Xóa Thành Công!");
 		} catch (Exception e) {
+			System.out.println(e);
 			t.rollback();
 			model.addAttribute("message", "Xóa Thất Bại !");
 		} finally {

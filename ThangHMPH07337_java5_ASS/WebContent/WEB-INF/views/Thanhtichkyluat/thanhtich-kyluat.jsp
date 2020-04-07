@@ -143,7 +143,7 @@ font-size: 13px;
 					</tr>
 					<tr>
 						<td><form:select path="staff.id" cssClass="in" items="${staffs}" itemValue="id" itemLabel="name" /></td>
-						<td><form:input path="date" cssClass="in" placeholder="Ngày/Tháng/Năm.."/></td>
+						<td><form:errors  path="date"></form:errors><form:input path="date" cssClass="in" placeholder="Ngày/Tháng/Năm.."/></td>
 					</tr>
 					<tr>
 						<th class="t1">Lý do</th>
@@ -151,8 +151,9 @@ font-size: 13px;
 						
 					</tr>
 					<tr>
-						<td><form:input path="reason" cssClass="in" placeholder="Nhập lý do.."/></td>
+						<td><form:errors  path="reason"></form:errors><form:input path="reason" cssClass="in" placeholder="Nhập lý do.."/></td>
 						<td>
+						<form:errors  path="type"></form:errors>
 						<form:radiobutton path="type" value="true" label="Thành tích" cssClass="rb" /> 
 						<form:radiobutton path="type" value="false"  label="Kỷ luật" cssClass="rb" />
 					</td>

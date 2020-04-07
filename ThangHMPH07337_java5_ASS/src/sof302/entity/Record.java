@@ -22,15 +22,16 @@ public class Record {
 	@GeneratedValue
 	private Integer id;
 	
-	@NotNull(message = "Vui lòng chọn một kiểu !")
+	@NotNull(message = "Vui Lòng chọn kiểu !")
 	private Boolean type;
 	
-	@NotBlank(message = "Vui lòng điền lý do !")
+	@NotBlank(message = "Vui Lòng Nhập lý do !")
 	private String reason;
 	
-	@NotBlank(message = "Vui lòng nhập ngày tao !")
+	
 	@Temporal(TemporalType.DATE) 
-	@DateTimeFormat(pattern = "MM/dd/yyyy")
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	@NotNull(message = "Vui Lòng nhập Ngày /Tháng /Năm")
 		private Date date;
 	
 	@ManyToOne
