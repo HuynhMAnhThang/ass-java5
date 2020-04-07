@@ -120,12 +120,27 @@ public class ThanhTichKyLuatController {
 	@RequestMapping("tonghop")
 	public String tonghop(ModelMap model) {
 		Session session = factory.getCurrentSession();
-		String hql = "SELECT r.staff.id, r.staff.name," + "SUM(case when r.type = 1 then 1 else 0 end), " + 
+		String hql = "SELECT  r.staff.id, r.staff.name,r.staff.lever," + "SUM(case when r.type = 1 then 1 else 0 end), " + 
 											 "SUM(case when r.type = 0 then 1 else 0 end) " +
-											 "FROM Record r" + " GROUP BY r.staff.id, r.staff.name 	";
+											 "FROM Record r" + " GROUP BY r.staff.id, r.staff.name,r.staff.lever "+
+											 "order by (SUM(case when r.type = 1 then 1 else 0 end)- SUM(case when r.type = 0 then 1 else 0 end)) desc";
 		Query query = session.createQuery(hql);
 		List<Object[]> list = query.list();
 		model.addAttribute("arrays", list);
 		return "Thanhtichkyluat/tonghop";
+	}
+	
+	@SuppressWarnings("unchecked")
+	@RequestMapping("tonghop2")
+	public String tonghop2(ModelMap model) {
+		Session session = factory.getCurrentSession();
+		String hql2 = "SELECT  r.staff.depart.name," + "SUM(case when r.type = 1 then 1 else 0 end), " + 
+											 "SUM(case when r.type = 0 then 1 else 0 end) " +
+											 "FROM Record r" + " GROUP BY r.staff.depart.name "+
+											 "order by (SUM(case when r.type = 0 then 1 else 0 end)-SUM(case when r.type = 1 then 1 else 0 end)) desc";
+		Query query = session.createQuery(hql2);
+		List<Object[]> list2 = query.list();
+		model.addAttribute("arraysPB", list2);
+		return "Thanhtichkyluat/tonghop2";
 	}
 }

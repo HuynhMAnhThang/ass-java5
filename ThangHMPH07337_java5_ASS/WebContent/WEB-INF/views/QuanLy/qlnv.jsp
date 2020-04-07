@@ -214,7 +214,7 @@ font-size: 13px;
 		<table class="table table-bordered table-hover table-condensed" id="myTable">
 			<thead>
 				<tr class="ex">
-					<th width="auto">Mã Nhân Viên</th>
+				
 					<th width="auto">Tên Nhân Viên</th>
 					<th width="auto">Giới Tính</th>
 					<th width="auto">Ngày Sinh</th>
@@ -230,7 +230,7 @@ font-size: 13px;
 			<tbody>
 				<c:forEach var="a" items="${staffs}">
 					<tr>
-						<td style="text-align: center;">${a.id}</td>
+					
 						<td>${a.name}</td>
 						<td style="text-align: center;">${a.gender?'Nam':'Nữ'}</td>
 						<td style="text-align: center;">${a.birthday}</td>

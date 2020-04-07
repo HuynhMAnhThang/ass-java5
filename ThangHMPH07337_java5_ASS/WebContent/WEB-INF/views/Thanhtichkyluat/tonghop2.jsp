@@ -103,34 +103,35 @@ font-size: 13px;
         <i class="fas fa-sun"></i>
      </div>
 	<div id="clock"></div> <Br>
+		
 		<p class="timkiemnhanvien">
-			<b>TÌM KIẾM NHÂN VIÊN:</b>
+			<b>TÌM KIẾM PHÒNG BAN:</b>
 		</p>
 		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Nhập tên nhân viên cần tìm..." data-toggle="tooltip" data-placement="bottom" title="Tìm Kiếm Nhân Viên"> <br>
 		<i class="fa fa-search" aria-hidden="true"></i>
 		<table class="table table-bordered table-hover table-condensed " id="myTable">
 			<thead>
 				<tr class="ex">
-					<th width="auto">Tên Nhân Viên</th>
-					<th width="auto">Cấp Độ</th>
+				
+					<!-- <th width="auto">Tên Nhân Viên</th> -->
+					<th width="auto">Tên Phòng Ban</th>
 					<th width="auto">Tổng thành tích</th>
 					<th width="auto">Tổng kỷ luật</th>
 					<th width="auto">Điểm Thưởng</th>
 				</tr>
 			</thead>
 			<tbody>
-				<c:forEach var="a" items="${arrays}">
+				<c:forEach var="a" items="${arraysPB}">
 					<tr>
-						<td>${a[1]}</td>
+						<%-- <td>${a[1]}</td> --%>
+						<td>${a[0]}</td>
+						<td style="text-align: center;">${a[1]}</td>
 						<td style="text-align: center;">${a[2]}</td>
-						<td style="text-align: center;">${a[3]}</td>
-						<td style="text-align: center;">${a[4]}</td>
-						<td style="text-align: center;">${a[3]-a[4]}</td>
+						<td style="text-align: center;">${a[1]-a[2]}</td>
 					</tr>
 				</c:forEach>
 			</tbody>
 		</table>
-		
 		
 </div>
 	<!-- JavaScript -->
@@ -158,6 +159,8 @@ font-size: 13px;
 				}
 			}
 		}
+		
+		
 
 		//Thời Gian
 		function time() {

@@ -115,11 +115,11 @@ font-size: 13px;
 						<a  class="font13px" data-toggle="tooltip" data-placement="bottom" title=""><b>${sessionScope.fullname}</b> <span class="caret"></span> </a>
 							<ul class="dropdown">
 								<li>
-									<a href="log/doimatkhau.htm" data-toggle="tooltip" data-placement="bottom" title="ĐĂNG XUẤT"><b>Đổi mật khẩu <i class="fas fa-sign-out-alt"></i> </b></a>
+									<a href="log/doimatkhau.htm" data-toggle="tooltip" data-placement="bottom" title="ĐỔI MẬT KHẨU"><b>Đổi mật khẩu <i class="fas fa-sign-out-alt"></i> </b></a>
 								</li>
 								
 								<li>
-								<a href="${pageContext.request.contextPath}/index.jsp" data-toggle="tooltip" data-placement="bottom" title="ĐĂNG XUẤT"><b>Đăng xuất <i class="fas fa-sign-out-alt"></i> </b></a>
+								<a href="home/index.htm" data-toggle="tooltip" data-placement="bottom" title="ĐĂNG XUẤT"><b>Đăng xuất <i class="fas fa-sign-out-alt"></i> </b></a>
 								</li>
 						</ul>
 				</li>
@@ -138,30 +138,27 @@ font-size: 13px;
 		<form:form action="Thanhtichkyluat/thanhtich-kyluat.htm" modelAttribute="record">
 			<table class="tb1">
 					<tr>
-						<th class="t1">Mã thành tích - kỷ luật</th>
+						<th>Mã Nhân viên</th>
 						<th>Ngày lập</th>
 					</tr>
 					<tr>
-						<td><form:input path="id" cssClass="in" placeholder="Điền tự động.."/></td>
+						<td><form:select path="staff.id" cssClass="in" items="${staffs}" itemValue="id" itemLabel="name" /></td>
 						<td><form:input path="date" cssClass="in" placeholder="Ngày/Tháng/Năm.."/></td>
 					</tr>
 					<tr>
 						<th class="t1">Lý do</th>
-						<th>Mã Nhân viên</th>
+						<th class="t1">Loại</th>
+						
 					</tr>
 					<tr>
 						<td><form:input path="reason" cssClass="in" placeholder="Nhập lý do.."/></td>
-						<td><form:select path="staff.id" cssClass="in" items="${staffs}" itemValue="id" itemLabel="name" /></td>
-					</tr>
-					<tr>
-						<th class="t1">Loại</th>
-					</tr>
-					<tr>
-					<td>
+						<td>
 						<form:radiobutton path="type" value="true" label="Thành tích" cssClass="rb" /> 
-						<form:radiobutton path="type" value="false"  label="Kỷ luật" cssClass="rb" /></td>
-						
+						<form:radiobutton path="type" value="false"  label="Kỷ luật" cssClass="rb" />
+					</td>
+					
 					</tr>
+					
 			</table>
 			<div class="form text-center">
 					<button name="btnInsert" class="btn btn-default" onclick="validate()">Thêm mới</button>
@@ -182,7 +179,6 @@ font-size: 13px;
 		<table class="table table-bordered table-hover table-condensed" id="myTable">
 			<thead>
 				<tr class="ex">
-					<th width="auto">Mã Thành Tích - Kỷ Luật</th>
 					<th width="auto">Tên Nhân Viên</th>
 					<th width="auto">Loại</th>
 					<th width="auto">Lý Do</th>
@@ -193,7 +189,6 @@ font-size: 13px;
 			<tbody>
 				<c:forEach var="a" items="${records}">
 					<tr>
-						<td style="text-align: center;">${a.id}</td>
 						<td>${a.staff.name}</td>
 						<td>${a.type?'Thành tích':'Kỷ luật'}</td>
 						<td>${a.reason}</td>
