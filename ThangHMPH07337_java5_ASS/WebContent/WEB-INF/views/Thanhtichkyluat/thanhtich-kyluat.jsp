@@ -160,8 +160,13 @@ font-size: 13px;
 					</td>
 					
 					</tr>
+				
+					<tr>
+							<td><form:input type="hidden" path="id" cssClass="in" /></td>
+					</tr>
 					
 			</table>
+			
 			<div class="form text-center">
 					<button name="btnInsert" class="btn btn-default" onclick="validate()">Thêm mới</button>
 					<button name="btnUpdate" class="btn btn-default" onclick="validate1()">Cập nhật</button>

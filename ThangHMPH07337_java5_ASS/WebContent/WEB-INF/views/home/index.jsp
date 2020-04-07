@@ -54,7 +54,7 @@
 
 			<div class="logo mr-auto">
 				<h1>
-					<a href="index.html"> ABC Group </a>
+					<a href="../home/index.htm"> ABC Group </a>
 				</h1>
 
 			</div>
@@ -62,7 +62,8 @@
 			<nav class="nav-menu d-none d-lg-block">
 				<ul>
 					<li class="active"><a href="#header">Home</a></li>
-					<li><a href="#testimonials">Cofounder</a></li>
+					<li><a href="#what-we-do">Services</a></li>
+					<li><a href="#portfolio">Product</a></li>
 					<li><a href="#Top10">Top 6</a></li>
 					<li><a href="#contact">Contact Us</a></li>
 
@@ -591,6 +592,7 @@
 		</div>
 	</section>
 	<!-- End Team Section --> <!-- ======= Contact Section ======= -->
+		
 	<section id="contact" class="contact section-bg">
 		<div class="container">
 
