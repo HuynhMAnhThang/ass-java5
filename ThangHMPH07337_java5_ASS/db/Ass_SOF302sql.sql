@@ -36,6 +36,7 @@ Create table Records(
 	Reason		Nvarchar(30),
 	Date		Datetime,
 	Staffid		int	not null Foreign key References Staffs
+	
 )
 
 Select * from Users
@@ -61,9 +62,19 @@ Insert into Staffs values(N'Nhân viên 02', 0, '02/05/1998', 'nv02@fpt.edu.vn',
 Insert into Staffs values(N'Nhân viên 03', 0, '12/22/1999', 'nv03@fpt.edu.vn', '0387435694', '12000000', '1', null, 1)
 
 Insert into Records values(1, null, '01/01/2020', 1)
-Insert into Records values(0, null, '01/01/2020', 1)
+Insert into Records values(0, null, '01/01/2020', 5)
 Insert into Records values(1, null, '05/01/2020', 2)
 Insert into Records values(0, null, '07/01/2020', 4)
+Insert into Records values(0, null, '09/01/2020', 3)
+Insert into Records values(1, null, '01/01/2020', 2)
+Insert into Records values(0, null, '01/01/2020', 1)
+Insert into Records values(1, null, '05/01/2020', 4)
+Insert into Records values(0, null, '07/01/2020', 4)
+Insert into Records values(0, null, '09/01/2020', 1)
+Insert into Records values(1, null, '01/01/2020', 1)
+Insert into Records values(0, null, '01/01/2020', 6)
+Insert into Records values(1, null, '05/01/2020', 1)
+Insert into Records values(0, null, '07/01/2020', 3)
 Insert into Records values(0, null, '09/01/2020', 3)
 
 delete from Staffs
