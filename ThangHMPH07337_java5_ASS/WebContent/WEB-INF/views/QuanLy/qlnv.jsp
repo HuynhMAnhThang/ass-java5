@@ -190,7 +190,7 @@ font-size: 13px;
 					</tr>
 					
 					<tr>
-						<td><form:errors  path="email"></form:errors><form:input path="" cssClass="in" placeholder="Nhập email (@gmail.com).."/></td>
+						<td><form:errors  path="email"></form:errors><form:input path="email" cssClass="in" placeholder="Nhập email (@gmail.com).."/></td>
 						<td><form:select path="depart.id" cssClass="in" items="${departs}" itemValue="id" itemLabel="name" /></td>
 					</tr>
 					
@@ -269,8 +269,8 @@ font-size: 13px;
 			} if (sdt.length !== 10) {
 				alert("Số điện thoại phải đủ 10 ký tự !");
 				return false;
-			} if (luong.length == 0) {
-				alert("Vui lòng nhập lương !")
+			} if (isNaN(luong)) {
+				alert("Vui lòng nhập số lương !")
 			}
 			else{
 				alert("Thêm mới thành công !")

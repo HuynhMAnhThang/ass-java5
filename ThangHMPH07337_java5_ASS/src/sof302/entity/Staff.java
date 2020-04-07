@@ -18,6 +18,7 @@ import javax.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
@@ -33,6 +34,7 @@ public class Staff {
 	
 	@Temporal(TemporalType.DATE)
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	@NotNull(message = "Vui Lòng nhập ngày/tháng/năm")
 	private Date birthday;
 	
 	@NotBlank(message = "vui lòng nhập email (ex:abc123@gmail)")
@@ -43,7 +45,6 @@ public class Staff {
 	private String phone;
 	
 	@NotNull(message = "Vui Lòng nhập lương !")
-
 	private Float salary;
 	private Integer lever;
 	private	String notes;
