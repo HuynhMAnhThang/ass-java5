@@ -52,7 +52,9 @@
 	<header id="header" class="fixed-top d-flex align-items-center">
 		<div class="container d-flex align-items-center">
 
+
 			<div class="logo mr-auto">
+
 				<h1>
 					<a href="../home/index.htm"> ABC Group </a>
 				</h1>
@@ -67,11 +69,15 @@
 					<li><a href="#Top10">Top 6</a></li>
 					<li><a href="#contact">Contact Us</a></li>
 
+					<!--  -->
 				</ul>
+
 			</nav>
 			<!-- .nav-menu -->
 
-
+			<div style="float: left">
+				<i class="fa fa-language"></i><a href="?language=en">English</a>|<a href="?language=vi_VN">Vietnamese</a>
+			</div>
 		</div>
 	</header>
 	<!-- End Header -->
@@ -160,14 +166,14 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 						do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					<ul>
-						<li><i class="	fa fa-check-square-o"></i> Ullamco laboris nisi
-							ut aliquip ex ea commodo consequat.</li>
-						<li><i class="	fa fa-check-square-o"></i> Duis aute irure dolor
-							in reprehenderit in voluptate velit.</li>
+						<li><i class="	fa fa-check-square-o"></i> Ullamco laboris
+							nisi ut aliquip ex ea commodo consequat.</li>
+						<li><i class="	fa fa-check-square-o"></i> Duis aute irure
+							dolor in reprehenderit in voluptate velit.</li>
 					</ul>
 					<div class="row icon-boxes">
 						<div class="col-md-6">
-							<i class="fa fa-wpforms" ></i>
+							<i class="fa fa-wpforms"></i>
 							<h4>Corporis voluptates sit</h4>
 							<p>Consequuntur sunt aut quasi enim aliquam quae harum
 								pariatur laboris nisi ut aliquip</p>
@@ -265,15 +271,15 @@
 
 				<div class="col-lg-3 col-6">
 					<div class="count-box">
-						<i class="fa fa-file-archive-o"></i> <span data-toggle="counter-up">521</span>
+						<i class="fa fa-file-archive-o"></i> <span
+							data-toggle="counter-up">521</span>
 						<p>Projects</p>
 					</div>
 				</div>
 
 				<div class="col-lg-3 col-6 mt-5 mt-lg-0">
 					<div class="count-box">
-						<i class="fa fa-support"></i> <span
-							data-toggle="counter-up">1,463</span>
+						<i class="fa fa-support"></i> <span data-toggle="counter-up">1,463</span>
 						<p>Hours Of Support</p>
 					</div>
 				</div>
@@ -576,10 +582,9 @@
 								alt="">
 							<h4>${a[0]}</h4>
 							<span>${a[1]}</span>
-							<%-- <p>${a[4]}</p> --%>
 							<div class="social">
 								<button class="btn btn-success">
-									<a href="#" style="color: white">See Detail</a>
+									<a type="button" class="btn btn-success" href="#" style="color: white">See Detail</a>
 								</button>
 							</div>
 						</div>
@@ -592,7 +597,7 @@
 		</div>
 	</section>
 	<!-- End Team Section --> <!-- ======= Contact Section ======= -->
-		
+
 	<section id="contact" class="contact section-bg">
 		<div class="container">
 

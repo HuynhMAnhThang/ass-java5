@@ -138,7 +138,7 @@ font-size: 13px;
 					</tr>
 					
 					<tr>
-						<td><form:input path="id" cssClass="in" placeholder="Điền tự động.."/></td>
+						<td ><form:input path="id" cssClass="in" placeholder="Điền tự động.."  /></td>
 						<td><form:errors  path="phone"></form:errors><form:input path="phone" cssClass="in" placeholder="Nhập số điện thoại.."/></td>
 					</tr>
 					
@@ -191,7 +191,7 @@ font-size: 13px;
 					</tr>
 					
 					<tr>
-						<td><form:errors  path="email"></form:errors><form:input path="email" cssClass="in" placeholder="Nhập email (@gmail.com).."/></td>
+						<td><form:errors  path="email"  cssClass="error"></form:errors><form:input path="email" cssClass="in" placeholder="Nhập email (@gmail.com).."/></td>
 						<td><form:select path="depart.id" cssClass="in" items="${departs}" itemValue="id" itemLabel="name" /></td>
 					</tr>
 					

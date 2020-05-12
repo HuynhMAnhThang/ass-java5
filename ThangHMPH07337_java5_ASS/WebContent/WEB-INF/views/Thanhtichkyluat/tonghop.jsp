@@ -55,7 +55,7 @@ font-size: 13px;
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 					<i class="fas fa-bars"></i>
 				</button>
-				<a class="navbar-brand" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>TỔNG HỢP</a>
+				<a class="navbar-brand" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>TỔNG HỢP/TỔNG HỢP NHÂN VIÊN</a>
 		</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
